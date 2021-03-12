@@ -620,7 +620,6 @@ static void setup_plugins(const char *lib_name)
   int (*query)(int *, char ***);
   
   sprintf(buf, "%s/.lfview/%s", getenv("HOME"), lib_name);
-  printf(buf);
   plugin_handle = dlopen(buf, RTLD_LAZY);
   if (plugin_handle == NULL) {
     sprintf(buf, "%s/%s", PLUGINDIR, lib_name);
