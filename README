@@ -1,4 +1,4 @@
-lfview (Leaf $B2hA|%m!<%@(B) Version 1.1beta
+lfview (Leaf 画像ローダ) Version 1.1beta
 Author: TF(telnet@geocities.co.jp)
 Date: 01/30/2000
 Home page: http://www.imou.to/~tf/
@@ -6,191 +6,191 @@ Home page: http://www.imou.to/~tf/
 
 What's this?
 ------------
-Leaf $B$N%S%8%e%"%k%N%Y%k!V<6!W!V:/!W!V(BTo Heart$B!WEy$K4^$^$l$k2hA|$rI=<((B
-$B$9$k%S%e!<%"$G$9!%(BUnix $B7O(B OS + X11 $B$N4D6-$GF0:n$7$^$9!%%"!<%+%$%V7A<0(B
-$B$+$iD>@\2hA|$rFI$_=P$9$3$H$,$G$-$k$N$G!$5pBg$J%"!<%+%$%V$rM=$aE83+$7$F(B
-$B$*$/I,MW$,$J$$$N$,FCD'$G$9!%(B
+Leaf のビジュアルノベル「雫」「痕」「To Heart」等に含まれる画像を表示
+するビューアです．Unix 系 OS + X11 の環境で動作します．アーカイブ形式
+から直接画像を読み出すことができるので，巨大なアーカイブを予め展開して
+おく必要がないのが特徴です．
 
-$B%-%c%i%/%?!<$NN)$A3($O!$(BX11 $B$N(B shape extension $B$r;H$C$FHs6k7A%&%#%s%I(B
-$B%&$GI=<($9$k$3$H$b$G$-$^$9!%(B
+キャラクターの立ち絵は，X11 の shape extension を使って非矩形ウィンド
+ウで表示することもできます．
 
-$BF0:n3NG'(B
+動作確認
 --------
 Linux 2.0.x + XFree86 3.3.x
 FreeBSD
 OpenBSD
 NEC EWS4800
 
-$BBP1~%U%)!<%^%C%H(B
+対応フォーマット
 ----------------
- $B!V<6!W!V:/!W(B             LFG $B7A<02hA|(B
- $B!V(BTo Heart$B!W(B             LF2 $B7A<02hA|(B
- $B!V$5$*$j$s$H$$$C$7$g(B!!$B!W(B maxxdata.pak $B$K4^$^$l$k(B LFG $B7A<02hA|(B
-                          *.pak $B$K4^$^$l$k(B *.grp $B7A<02hA|(B
- $B!V=i2;$N$J$$$7$g(B!$B!W(B      vnhatdat.pak $B$K4^$^$l$k(B LF2 $B7A<02hA|(B
-                          *.pak $B$K4^$^$l$k(B *.grp $B7A<02hA|(B
- $B!V(BWhite Album$B!W(B          *.pak $B$K4^$^$l$k(B *.grp, *.gad $B7A<02hA|(B
- $B!V$3$_$C$/%Q!<%F%#!<!W(B   *.pak $B$K4^$^$l$k(B *.grp $B7A<02hA|(B
+ 「雫」「痕」             LFG 形式画像
+ 「To Heart」             LF2 形式画像
+ 「さおりんといっしょ!!」 maxxdata.pak に含まれる LFG 形式画像
+                          *.pak に含まれる *.grp 形式画像
+ 「初音のないしょ!」      vnhatdat.pak に含まれる LF2 形式画像
+                          *.pak に含まれる *.grp 形式画像
+ 「White Album」          *.pak に含まれる *.grp, *.gad 形式画像
+ 「こみっくパーティー」   *.pak に含まれる *.grp 形式画像
 
- $B!V(BWhite Album($B%*!<%H%G%b(B)$B!W(B     *.pak $B$K4^$^$l$k(B *.grp, *.gad $B7A<02hA|(B
- $B!V$3$_$C$/%Q!<%F%#!<(B(OP $B%G%b(B)$B!W(B opening.pak $B$K4^$^$l$k(B *.grp $B7A<02hA|(B
+ 「White Album(オートデモ)」     *.pak に含まれる *.grp, *.gad 形式画像
+ 「こみっくパーティー(OP デモ)」 opening.pak に含まれる *.grp 形式画像
 
- $B!V(BTo Heart(Playstation $BHG(B)$B!W(B *.pak $B$K4^$^$l$k2hA|(B
- $B!VCvL>@n$G$$$3$&(B!!$B!W(B     [$B0lItBP1~(B]$B$3$_%Q%/%$%:$H$*$^$1%7%J%j%*$K4^$^$l$k(B *.grp, *.lf3 $B2hA|(B
+ 「To Heart(Playstation 版)」 *.pak に含まれる画像
+ 「猪名川でいこう!!」     [一部対応]こみパクイズとおまけシナリオに含まれる *.grp, *.lf3 画像
 
-$B%"!<%+%$%V%U%!%$%k7A<0(B($B!A(B.pak)$B$KBP1~$7$F$*$j!$%"!<%+%$%V$rE83+$9$k$3$H(B
-$B$J$/2hA|$rI=<($9$k$3$H$,$G$-$^$9!%(B
+アーカイブファイル形式(〜.pak)に対応しており，アーカイブを展開すること
+なく画像を表示することができます．
 
 
-$B%$%s%9%H!<%k(B
+インストール
 ------------
-$B$^$::G=i$K(B config.tmpl $B$rJT=8$7$^$9!%(B
-($B3:Ev$9$k(B OS $B$K$D$$$F%3%a%s%H$r30$;$PNI$$$H;W$$$^$9!%(B)
+まず最初に config.tmpl を編集します．
+(該当する OS についてコメントを外せば良いと思います．)
 
-$B%3%s%Q%$%k$O0J2<$N<j=g$G9T$$$^$9!%(B
+コンパイルは以下の手順で行います．
 
  xmkmf -a
  make
  make install
 
-$B2hA|E83+ItJ,$r6&M-%i%$%V%i%j$N7A$GJ,N%$7$F$$$k$N$G!$(BX11 $BI8=`$N%G%#%l%/(B
-$B%H%j$K%$%s%9%H!<%k$7$?$/$J$$>l9g$K$O!$M=$a(B config.tmpl $B$N(B PLUGINDIR $B$r(B
-$B=$@5$7$F$/$@$5$$!%(Bmake $B$7$?8e!$<B9T%U%!%$%k$O9%$-$J>l=j$KCV$$$F$+$^$$(B
-$B$^$;$s$,!$(Bliblfv.so $B$O(B PLUGINDIR $B$G;XDj$7$?>l=j$KCV$$$F$/$@$5$$!%(B
+画像展開部分を共有ライブラリの形で分離しているので，X11 標準のディレク
+トリにインストールしたくない場合には，予め config.tmpl の PLUGINDIR を
+修正してください．make した後，実行ファイルは好きな場所に置いてかまい
+ませんが，liblfv.so は PLUGINDIR で指定した場所に置いてください．
 
 
-$B;HMQK!(B
+使用法
 ------
-$B%3%^%s%I(B:
-    lfview [-root] [-shape] [-geometry geom][-a $B%"!<%+%$%V%U%!%$%k(B] file1 file2 ...
+コマンド:
+    lfview [-root] [-shape] [-geometry geom][-a アーカイブファイル] file1 file2 ...
 
--a $B%*%W%7%g%s$G%"!<%+%$%V%U%!%$%k$r;XDj$7$?;~$O!$%"!<%+%$%V1\Mw%b!<%I(B
-$B$G5/F0$7$^$9!%$3$N;~$K$O(B file1, file2, ... $B$O%"!<%+%$%VFb$N2hA|$H2r<a(B
-$B$5$l$^$9!%(B-a $B%*%W%7%g%s$N;XDj$,$J$$;~$OE83+:Q$_$N2hA|%U%!%$%k$rD>@\;X(B
-$BDj$7$?$b$N$H2r<a$7$^$9!%(B
+-a オプションでアーカイブファイルを指定した時は，アーカイブ閲覧モード
+で起動します．この時には file1, file2, ... はアーカイブ内の画像と解釈
+されます．-a オプションの指定がない時は展開済みの画像ファイルを直接指
+定したものと解釈します．
 
--root $B%*%W%7%g%s$,;XDj$5$l$?>l9g$K$O!$2hA|$r%k!<%H%&%#%s%I%&$KI=<($7$^(B
-$B$9!%$3$N>l9g$K$O!$J#?t$N2hA|$,;XDj$5$l$F$$$F$b!$:G=i$N0z?t$G;XDj$7$?2h(B
-$BA|$N$_$,I=<($5$l$^$9!%(B
+-root オプションが指定された場合には，画像をルートウィンドウに表示しま
+す．この場合には，複数の画像が指定されていても，最初の引数で指定した画
+像のみが表示されます．
 
--shape $B%*%W%7%g%s$O%-%c%i%/%?$N3($J$IF)L@ItJ,$r4^$`2hA|$r!$(BX11 $B$N(B 
-shape extenion $B$r;H$C$FHs6k7A%&%#%s%I%&$GI=<($9$k$?$a$N$b$N$G$9!%$H$$(B
-$B$&$N$b!$(B *.grp $B%U%)!<%^%C%H$K$OF)L@ItJ,$N;XDj$,4^$^$l$F$$$J$$$h$&$J$N(B
-$B$G!$;HMQ;~$K%f!<%6$,7h$aBG$A$G;XDj$7$J$1$l$P$J$i$J$$$N$G$9!%$=$N$?$a!$(B
--shape $B%*%W%7%g%s$rMQ$$$k$H!$F)L@ItJ,$r;}$?$J$$2hA|$KF)L@ItJ,$,8=$l$k(B
-$B$3$H$,$"$j$^$9!%(B
+-shape オプションはキャラクタの絵など透明部分を含む画像を，X11 の 
+shape extenion を使って非矩形ウィンドウで表示するためのものです．とい
+うのも， *.grp フォーマットには透明部分の指定が含まれていないようなの
+で，使用時にユーザが決め打ちで指定しなければならないのです．そのため，
+-shape オプションを用いると，透明部分を持たない画像に透明部分が現れる
+ことがあります．
 
--geometry $B%*%W%7%g%s$O%&%#%s%I%&$NI=<(0LCV(B($B%&%#%s%I%&I=<(%b!<%I;~(B)$B!$(B
-$B$^$?$O2hA|$NI=<(0LCV(B($B%k!<%HI=<(%b!<%I;~(B)$B$r;XDj$7$^$9!%;XDjJ}K!$O(B X 
-$B%/%i%$%"%s%H$G0lHLE*$K;H$o$l$F$$$k7A<0$G$9!%$?$@$7!$;XDj$G$-$k$N$O(B
-$B0LCV$N$_$G!$%&%#%s%I%&$N%5%$%:$O;XDj$G$-$^$;$s!%(B
+-geometry オプションはウィンドウの表示位置(ウィンドウ表示モード時)，
+または画像の表示位置(ルート表示モード時)を指定します．指定方法は X 
+クライアントで一般的に使われている形式です．ただし，指定できるのは
+位置のみで，ウィンドウのサイズは指定できません．
 
-$BA`:n(B
+操作
 ----
-$B%9%Z!<%9(B              : $B<!$N2hA|$rI=<((B
-$B%P%C%/%9%Z!<%9(B        : $BA0$N2hA|$rI=<((B
+スペース              : 次の画像を表示
+バックスペース        : 前の画像を表示
 
-$B%7%U%H(B+$B%9%Z!<%9(B, $B%?%V(B : 10$B8D@h$N2hA|(B
-$B%7%U%H(B+$B%P%C%/%9%Z!<%9(B : 10$B8DA0$N2hA|(B
+シフト+スペース, タブ : 10個先の画像
+シフト+バックスペース : 10個前の画像
 
-`q'                   : $B%W%m%0%i%`=*N;(B
+`q'                   : プログラム終了
 
 
-$B$*$^$1(B
+おまけ
 ------
-random_changer $B%G%#%l%/%H%j$K$O(B lfview $B$H3F%2!<%`$N%"!<%+%$%V%U%!%$%k(B
-$B$rMxMQ$9$k!$JI;f%A%'%s%8%c!<(B($BC1$J$k%7%'%k%9%/%j%W%H(B)$B$,F~$C$F$$$^$9!%;H(B
-$B$$J}$O(B
+random_changer ディレクトリには lfview と各ゲームのアーカイブファイル
+を利用する，壁紙チェンジャー(単なるシェルスクリプト)が入っています．使
+い方は
 
   leafbg [sizuku|kizuato|toheart|random]
 
-$B$G!$0z?t$KI=<($7$?$$%2!<%`$r;XDj$9$k$H%"!<%+%$%VFb$+$i%i%s%@%`$K2hA|$,(B
-$BA*Br$5$l!$I=<($5$l$^$9!%0z?t$,(B random $B$N>l9g$O$I$N%2!<%`$N2hA|$K$9$k$+(B
-$B$I$&$+$b%i%s%@%`$KA*Br$5$l$^$9!%0z?t$r;XDj$7$J$+$C$?>l9g$K$O%3%^%s%I$N(B
-$B4JC1$J;H$$J}$,I=<($5$l$^$9!%(B
+で，引数に表示したいゲームを指定するとアーカイブ内からランダムに画像が
+選択され，表示されます．引数が random の場合はどのゲームの画像にするか
+どうかもランダムに選択されます．引数を指定しなかった場合にはコマンドの
+簡単な使い方が表示されます．
 
-$B3F%2!<%`$N%"!<%+%$%V$NCV$->l=j$H2hA|%j%9%H$O$=$l$>$l%9%/%j%W%HFb$G;XDj(B
-$B$7$J$1$l$P$J$j$^$;$s!%6qBNE*$K$O!$(Bleafbg $B@hF,ItJ,$K$"$kJQ?t(B LEAFDIR,
-LIST_DIR $B$NDj5A$rJQ99$7$F$/$@$5$$!%(B
+各ゲームのアーカイブの置き場所と画像リストはそれぞれスクリプト内で指定
+しなければなりません．具体的には，leafbg 先頭部分にある変数 LEAFDIR,
+LIST_DIR の定義を変更してください．
 
-$B$^$?!$IUB0$N(B img.* $B$OI=<($9$k2hA|$N%j%9%H$G!$$3$l$rJT=8$9$k$3$H$K$h$j(B
-  -$BFCDj$N2hA|$rI=<($5$;$J$+$C$?$j(B($B%j%9%H$h$j:o=|$9$k(B)
-  -$BI=<($N3NN($r>e$2$?$j(B($B%j%9%H$KJ#?t2s5-=R$9$k(B)
-$B$9$k$3$H$,$G$-$^$9!%(B
+また，付属の img.* は表示する画像のリストで，これを編集することにより
+  -特定の画像を表示させなかったり(リストより削除する)
+  -表示の確率を上げたり(リストに複数回記述する)
+することができます．
 
-$BCN$i$J$$$&$A$K(B H $B%7!<%s$N2hA|$,GX7J$K$J$C$F$$$?$j$7$F!$$"$;$k$3$H$,$"$C(B
-$B$?$j$9$k$N$GMWCm0U(B :-)
+知らないうちに H シーンの画像が背景になっていたりして，あせることがあっ
+たりするので要注意 :-)
 
 To Do
 -----
-  -$BB>$N2hA|$N%W%i%0%$%s$r:n$k(B
-  -$B2?$+$N%D!<%k%-%C%H$r;H$C$F$b$C$H%^%7$J%$%s%?%U%'!<%9$r:n$k(B($B$G$b$d$C(B
-   $B$QLLE]!%%$%s%9%H!<%k$b$7$K$/$/$J$k$7(B ^_^;)$B!%(B
-  -$B%k!<%H%&%#%s%I%&I=<($N;~$NGX7J?'$N;XDj(B($B8=:_$O9u8GDj(B)$B!%(B
-  -$B!V$5$*$j$s$H$$$C$7$g(B!!$B!W!V=i2;$N$J$$$7$g(B!$B!W$NL$%5%]!<%H2hA|$X$NBP1~!%(B
-  -$B%G%#%9%W%l%$$,(B 8bpp $B$N;~$OEvA3?'ITB-$K$J$k$N$G8:?'$r<BAu$7$?$$!%(B
+  -他の画像のプラグインを作る
+  -何かのツールキットを使ってもっとマシなインタフェースを作る(でもやっ
+   ぱ面倒．インストールもしにくくなるし ^_^;)．
+  -ルートウィンドウ表示の時の背景色の指定(現在は黒固定)．
+  -「さおりんといっしょ!!」「初音のないしょ!」の未サポート画像への対応．
+  -ディスプレイが 8bpp の時は当然色不足になるので減色を実装したい．
 
-$B;HMQ>r7o(B
+使用条件
 --------
-$B$3$N%W%m%0%i%`$NG[I[$K$D$$$F$O%U%j!<%=%U%H$G$"$k8B$jLdBjL5$7$H$N8+2r$r(B
-$B%j!<%U$5$s$+$iD:$$$F$*$j$^$9!%(B
+このプログラムの配布についてはフリーソフトである限り問題無しとの見解を
+リーフさんから頂いております．
 
-$B$h$C$F!$$3$N%"!<%+%$%V<+BN$OFbMF$r2~JQ$7$J$$8B$jE>:\$O<+M3$G$9!%(B
+よって，このアーカイブ自体は内容を改変しない限り転載は自由です．
 
-$B%W%m%0%i%`$N%=!<%9%3!<%I$*$h$S$=$NFbMF$O<+M3$KMxMQ$7$F9=$$$^$;$s$,!$$=(B
-$B$N:]@8$8F@$k0l@Z$N@UG$$OMxMQ<T$,Ii$&$b$N$H$7$^$9!%<B:]$KG[I[Ey$r9T$&>l(B
-$B9g$K$OD>@\%j!<%U$5$s$KLd$$9g$o$;$r9T$&$Y$-$G$7$g$&!%(B
+プログラムのソースコードおよびその内容は自由に利用して構いませんが，そ
+の際生じ得る一切の責任は利用者が負うものとします．実際に配布等を行う場
+合には直接リーフさんに問い合わせを行うべきでしょう．
 
-$B$^$?!$EvA3$N$3$H$G$9$,!$$3$N%D!<%k$r;HMQ$9$k:]$K$OCx:n8"<T(B($B%j!<%U(B)$B$N8"(B
-$BMx$r?/32$7$J$$$h$&$KCm0U$7$F$/$@$5$$!%:n<T$OCx:n8"<T$KB;32$rM?$($?>l9g(B
-$B$N@UG$$K$D$$$F$b4XCN$7$^$;$s!%$3$N%D!<%k$rMxMQ$7$?7k2L@8$8$?B;32$K$D$$(B
-$B$F$b0l@Z4XCN$7$^$;$s!%A4$F$4<+?H$N@UG$$GMxMQ$7$F$/$@$5$$!%(B
+また，当然のことですが，このツールを使用する際には著作権者(リーフ)の権
+利を侵害しないように注意してください．作者は著作権者に損害を与えた場合
+の責任についても関知しません．このツールを利用した結果生じた損害につい
+ても一切関知しません．全てご自身の責任で利用してください．
 
 
-$B$=$NB>(B
+その他
 ------
-$B2~NI%Q%C%A$d%P%0%l%]!<%H!&MWK>$OBg4?7^$G$9!%$G$b!$<+J,$NM_5a$N$^$^$K(B
-(=$B$$$-$"$?$j$P$C$?$j$K(B)$B:n$C$?%W%m%0%i%`$J$N$G!$$H$F$b$$$$2C8:$J:n$j$G$9!%(B
-$B%"!<%+%$%VBP1~$b:G=i$O$9$k$D$b$j$8$c$J$+$C$?$7!D!%(B
+改良パッチやバグレポート・要望は大歓迎です．でも，自分の欲求のままに
+(=いきあたりばったりに)作ったプログラムなので，とてもいい加減な作りです．
+アーカイブ対応も最初はするつもりじゃなかったし…．
 
-$B:G8e$K$J$j$^$9$,!$%j!<%U$5$s$KG[I[$K4X$9$kLd$$9g$o$;$r$7$?$H$3$m!$%U%j!<(B
-$B$J$i$P%=!<%9%3!<%I$r4^$a$FG[I[$7$F$h$$$H$NN;2r$rD:$1$^$7$?!%$G$9$+$i%U%!(B
-$B%sF1;N$G$3$NJU$j$N>pJs$r%*!<%W%s$K$7$F6&M-$G$-$k$H;W$$$^$9$N$G!$$=$&$$(B
-$B$&Cg4V$rJg=8$7$^$9(B(^_^;
+最後になりますが，リーフさんに配布に関する問い合わせをしたところ，フリー
+ならばソースコードを含めて配布してよいとの了解を頂けました．ですからファ
+ン同士でこの辺りの情報をオープンにして共有できると思いますので，そうい
+う仲間を募集します(^_^;
 
-$B<U<-(B
+謝辞
 ----
-PS $BHG!V(BTo Heart$B!W$X$NBP1~ItJ,$K$D$-$^$7$F$O!$(BMelody-Yoshi $B$5$s$N:n@.$5(B
-$B$l$?2hA|<h$j=P$7%D!<%k$N%=!<%9$rN.MQ$5$;$F$$$?$@$-$^$7$?!%?<$/46<U$$$?(B
-$B$7$^$9!%(B
-(Melody-Yoshi $B$5$s$N%[!<%`%Z!<%8(B: http://www.may.sakura.ne.jp/~melody/)
+PS 版「To Heart」への対応部分につきましては，Melody-Yoshi さんの作成さ
+れた画像取り出しツールのソースを流用させていただきました．深く感謝いた
+します．
+(Melody-Yoshi さんのホームページ: http://www.may.sakura.ne.jp/~melody/)
 
-$BMzNr(B
+履歴
 ----
-12/29/2000 To Heart $B$NN)$A3(I=<($GMn$A$k%P%0$X$NBP=h(B
-           -geometry $B%*%W%7%g%s$KBP1~(B (Thanks to ZIDNEY $B$5$s(B)
- 8/12/2000 $B!VCvL>@n$G$$$3$&(B!!$B!W$N0lIt2hA|$KBP1~(B
- 1/30/2000 Playstation $BHG!V(BTo Heart$B!W$K;CDjBP1~(B
-          (Special thanks to Melody-Yoshi $B$5$s(B!)
- 6/05/1999 $B!V$3$_$C$/%Q!<%F%#!<!W$KBP1~(B
-           LZ77 $B$NE83+ItJ,$N@0M}(B
-           *.grp $B$N%Q%l%C%H$N2r<a$r$?$V$s@52r$K(B(Thanks to $BLZ:d$5$s(B)
- 5/07/1999 $B!V$3$_$C$/%Q!<%F%#!<(B(OP $B%G%b(B)$B!W$KBP1~(B
-           XImage $B$N:n$jJ}$r=$@5(B(Thanks to $B$b$J$+$5$s(B)
- 9/15/1998 *.grp $B$N7A<0$N2r<a$r$?$V$s@52r$K(B & *.gad $B$KBP1~(B
-           (Thanks to $BLZ:d$5$s(B)
-           $B!V$5$*$j$s!W$N%"!<%+%$%V$rFI$`ESCf$KMn$A$k%P%0$N=$@5(B
-           $BF)L@?'$N07$$$,JQ$J$?$a!$%4%_$,=P$k%P%0$N=$@5(B
- 6/17/1998 $B%P!<%8%g%s(B 1.1beta$B!%!V(BWhite Album$B!W$K;CDjBP1~!%(B
- 4/08/1998 ($BL)$+$K2hA|E83+ItJ,$r6&M-%i%$%V%i%j$KDI$$=P$7$F$$$?$?$a!$(B
-            Linux $B0J30$GF0$+$J$/$J$C$F$$$?$N$G$9$,(B ^_^;;) FreeBSD,
-            OpenBSD, NEC EWS $B$KBP1~!%(B
-           (Thanks to $B$b$J$+$5$s!$Ln3~$5$s(B)
- 3/26/1998 PseudoColor $B$KBP1~!%(B
- 3/25/1998 $B?'$,(B allocate $B$G$-$J$$$H$-$KMn$A$kIT6q9g$X$NBP=h(B
-           (Thanks to $B$b$J$+$5$s(B)
- 3/13/1998 $B!V=i2;$N$J$$$7$g!W$N0lItBP1~(B
- 3/10/1998 shape extension $B$KBP1~!%(B
- 3/09/1998 24/32 bpp $B$G?'$,$*$+$7$/$J$kIT6q9g$X$NBP=h!%(B
-           (Thanks to $B9uBt$5$s(B)
-10/29/1997 $B%P!<%8%g%s(B 1.0 $B$r8x3+(B
+12/29/2000 To Heart の立ち絵表示で落ちるバグへの対処
+           -geometry オプションに対応 (Thanks to ZIDNEY さん)
+ 8/12/2000 「猪名川でいこう!!」の一部画像に対応
+ 1/30/2000 Playstation 版「To Heart」に暫定対応
+          (Special thanks to Melody-Yoshi さん!)
+ 6/05/1999 「こみっくパーティー」に対応
+           LZ77 の展開部分の整理
+           *.grp のパレットの解釈をたぶん正解に(Thanks to 木坂さん)
+ 5/07/1999 「こみっくパーティー(OP デモ)」に対応
+           XImage の作り方を修正(Thanks to もなかさん)
+ 9/15/1998 *.grp の形式の解釈をたぶん正解に & *.gad に対応
+           (Thanks to 木坂さん)
+           「さおりん」のアーカイブを読む途中に落ちるバグの修正
+           透明色の扱いが変なため，ゴミが出るバグの修正
+ 6/17/1998 バージョン 1.1beta．「White Album」に暫定対応．
+ 4/08/1998 (密かに画像展開部分を共有ライブラリに追い出していたため，
+            Linux 以外で動かなくなっていたのですが ^_^;;) FreeBSD,
+            OpenBSD, NEC EWS に対応．
+           (Thanks to もなかさん，野萱さん)
+ 3/26/1998 PseudoColor に対応．
+ 3/25/1998 色が allocate できないときに落ちる不具合への対処
+           (Thanks to もなかさん)
+ 3/13/1998 「初音のないしょ」の一部対応
+ 3/10/1998 shape extension に対応．
+ 3/09/1998 24/32 bpp で色がおかしくなる不具合への対処．
+           (Thanks to 黒沢さん)
+10/29/1997 バージョン 1.0 を公開
